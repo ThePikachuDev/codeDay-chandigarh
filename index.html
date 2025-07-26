@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS CodeDay Site</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg-black w-screen p-5 overflow-hidden text-white flex flex-col font-[Noto Sans Mono]">
+        <div class="navbar h-15 w-screen py-2 px-5 flex items-center justify-between gap-10">
+
+            <div class="nav-leftSide  flex items-center justify-between gap-3">
+
+                <div class="w-fit h-fit p-1 bg-sky-100">
+                    <a class="text-black font-semibold text-xl mx-5" href="./">Home</a>
+                </div>
+
+                <div class="w-fit h-fit p-1 bg-green-100">
+                    <a class="text-black font-semibold text-xl mx-5" href="./about.html">Pictures</a>
+                </div>
+                <div class="w-fit h-fit p-1 bg-purple-100">
+                    <a class="text-black font-semibold text-xl mx-5" href="./blogs.html">Blogs</a>
+                </div>
+            </div>
+        </div>
+        <div class="MiddleContent mt-10 w-screen h-full">
+            <div class="w-screen flex flex-col justify-center font-light ">
+                <pre class="MyAsciiArtTextName ">
+  __  __        _                                            _____  _                _     
+ |  \/  |      | |                                          / ____|(_)              | |    
+ | \  / |  ___ | |__    __ _  _ __ __      __ __ _  _ __   | (___   _  _ __    __ _ | |__  
+ | |\/| | / _ \| '_ \  / _` || '__|\ \ /\ / // _` || '_ \   \___ \ | || '_ \  / _` || '_ \ 
+ | |  | ||  __/| | | || (_| || |    \ V  V /| (_| || | | |  ____) || || | | || (_| || | | |
+ |_|  |_| \___||_| |_| \__,_||_|     \_/\_/  \__,_||_| |_| |_____/ |_||_| |_| \__, ||_| |_|
+                                                                               __/ |       
+                                                                              |___/        
+            </pre>
+
+                <div class="w-screen h-10 ml-3 mt-[-2vw] flex items-center justify-left gap-3">
+                    <a href="./index.html"
+                        class="linkToBio h-10 w-10 p-1 bg-rose-300 object-fit object-cover flex items-center justify-center">
+                        <img src="./static/discord-white-logo.png" alt="discord" class="w-fit h-fit ">
+                    </a>
+
+                    <a href="./index.html"
+                        class="linkToBio h-10 w-10 p-1 bg-teal-300 object-fit object-cover flex items-center justify-center">
+                        <img src="./static/x-logo-duotone.svg" alt="discord" class="w-fit h-fit ">
+                    </a>
+
+                    <a href="./index.html"
+                        class="linkToBio h-10 w-10 p-1 bg-cyan-300 object-fit object-cover flex items-center justify-center">
+                        <img src="./static/github-logo-duotone.svg" alt="github" class="w-fit h-fit ">
+                    </a>
+                </div>
+
+                <p class="text-2xl p-2 ">
+                    A high school student doing programming and loves linux , cli and TUIs.
+                </p>
+            </div>
+        </div>
+
+        <div class="projectSection mt-5 ml-3 w-screen h-fit">
+            <h1 class="text-5xl ">Projects : </h1>
+            <div class="projectContainer mt-5 w-2/3  flex flex-wrap gap-3">
+
+                <a href="https://github.com/ThePikachuDev/gh-dlp">
+                <div class="projectItem border-neutral-800 p-4 h-full border-[1px]">
+                    <h3 class="text-n font-bold dark:text-white text-neutral-800 mb-2">gh-dlp</h3>
+                    <p class="normal-text text-sm mb-4">A cli tool to download github repo's subfolder easily and super fast.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">Golang</span>
+                    </div>
+                </div>
+                </a>
+
+                <a href="https://github.com/ThePikachuDev/dotfiles">
+                <div class="projectItem border-neutral-800 p-4 h-full border-[1px]">
+                    <h3 class="text-n font-bold dark:text-white text-neutral-800 mb-2">dotfiles</h3>
+                    <p class="normal-text text-sm mb-4">all of my linux setup dotfiles </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">linux</span>
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">hyprland</span>
+                    </div>
+                </div>
+                </a>
+                <a href="https://github.com/ThePikachuDev/Discord-bot">
+                <div class="projectItem border-neutral-800 p-4 h-full border-[1px]">
+                    <h3 class="text-n font-bold dark:text-white text-neutral-800 mb-2">discord bot</h3>
+                    <p class="normal-text text-sm mb-4">A discord quiz bot written in discord.js</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">javascript</span>
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">discord.js</span>
+                    </div>
+                </div>
+                </a>
+                <a href="https://github.com/ThePikachuDev/gh-dlp">
+                <div class="projectItem border-neutral-800 p-4 h-full border-[1px]">
+                    <h3 class="text-n font-bold dark:text-white text-neutral-800 mb-2">chessz</h3>
+                    <p class="normal-text text-sm mb-4">A chess game written in zig and raylib ( wip )</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">zig</span>
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">raylib</span>
+                        <span class="font-mono dark:text-neutral-200 text-neutral-600 bg-neutral-200 dark:bg-neutral-800 text-xs px-2 py-1">gamedev</span>
+                    </div>
+                </div>
+                </a>
+            </div>
+        </div>
+<footer class="w-full text-gray-300 py-2">
+  <div class="mx-auto flex flex-col md:flex-row justify-between items-center">
+    <p class="text-sm">&copy; All rights reserved.</p>
+    <div class="mt-2 md:mt-0 flex space-x-4">
+      <a href="#" class="hover:text-white transition">Made with ❤️ by Meharwan Singh</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+</body>
+
+</html>
